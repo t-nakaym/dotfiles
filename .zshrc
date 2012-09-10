@@ -16,7 +16,7 @@ export PATH=${HOME}/local/bin:$PATH:/sbin:/usr/sbin:$HOME/bin
 export MANPATH=$X11HOME/man:/usr/man:/usr/lang/man:/usr/local/man:/usr/share/man
 export MAIL=/var/spool/mail/$USERNAME
 export EDITOR=vim
-export PAGER=less
+export PAGER='lv -c'
 export LESS=-cx3M
 export HELPDIR=/usr/local/lib/zsh/help  # directory for run-help function to find docs
 

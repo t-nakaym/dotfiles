@@ -1,0 +1,21 @@
+#
+# .zshrc.freebsd
+#
+#     written by t-nakaym 2009/04/29
+#
+
+X11HOME=/usr/X11R6
+
+PATH=${PATH}:${X11HOME}/bin:${HOME}/bin
+PATH=${PATH}:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin
+PATH=${PATH}:/usr/site/bin
+
+export CVSROOT=:local:${HOME}/CVSROOT
+
+alias portupgrade='portupgrade --batch'
+
+function portsgrep () {
+        (cd /usr/ports; make search name=$1)
+}
+
+

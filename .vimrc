@@ -55,8 +55,8 @@ set statusline=%<%F\ %r%h%w%y%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%4v(ASC
 set ffs=unix,dos,mac
 
 " auto encoding recognition settings
-set termencoding=euc-jp
-set encoding=euc-jp
+set termencoding=utf-8
+set encoding=utf-8
 set fileencodings=iso-2022-jp,utf-8,cp932,euc-jp
 
 set ambiwidth=double

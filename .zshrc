@@ -9,8 +9,8 @@ if [ `uname -s` = "FreeBSD" ]; then
     export LANG=ja_JP.eucJP
     export LC_ALL=ja_JP.eucJP
 else
-    export LANG=ja_JP.EUC-JP
-    export LC_ALL=ja_JP.EUC-JP
+    export LANG=ja_JP.UTF-8
+    export LC_ALL=ja_JP.UTF-8
 fi
 export PATH=${HOME}/local/bin:$PATH:/sbin:/usr/sbin:$HOME/bin
 export MANPATH=$X11HOME/man:/usr/man:/usr/lang/man:/usr/local/man:/usr/share/man

@@ -25,7 +25,7 @@ startup_message off
 # emulate .logout message
 pow_detach_msg "Screen session of \$LOGNAME \$:cr:\$:nl:ended."
 
-defencoding   euc
+defencoding   utf8
 deflogin      on
 defmonitor    on
 defscrollback 1000

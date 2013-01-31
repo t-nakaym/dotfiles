@@ -4,3 +4,5 @@
 .emacs.d/history
 .emacs.d/inits/*.elc
 .emacs.d/plugins
+.emacs.d/.org-id-locations
+.emacs.d/anything-c-adaptive-history

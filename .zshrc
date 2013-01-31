@@ -69,7 +69,7 @@ else
     alias ls='ls -F'
 fi
 if where lv > /dev/null 2>&1; then
-    alias less=lv
+    alias less='lv -c'
 elif where jless > /dev/null 2>&1; then
     alias less=jless
 fi

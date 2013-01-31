@@ -1,12 +1,15 @@
 [user]
 	name = t-nakaym
 	email = tnakaym@gmail.com
+[core]
+	pager = lv -c
 [color]
 	status = auto
 	diff = auto
 	branch = auto
 	interactive = auto
 	grep = auto
+	ui = true
 [alias]
 	st = status
 	ci = commit

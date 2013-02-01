@@ -6,3 +6,5 @@
 .emacs.d/plugins
 .emacs.d/.org-id-locations
 .emacs.d/anything-c-adaptive-history
+.emacs.d/elpa
+.emacs.d/inits/wget-log*

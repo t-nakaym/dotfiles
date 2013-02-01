@@ -1,7 +1,7 @@
 ;;; for auto-complete.el
 
-; download from http://cx4a.org/software/auto-complete/index.ja.html
-(add-to-list 'load-path "~/.emacs.d/plugins/auto-complete-1.3.1")
+; (package-install 'auto-complete)
+(add-to-list 'load-path "~/.emacs.d/elpa/auto-complete-20130122.1551")
 (require 'auto-complete-config)
-(add-to-list 'ac-dictionary-directories "~/.emacs.d/plugins/auto-complete-1.3.1/dict")
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/elpa/auto-complete-20130122.1551/dict")
 (ac-config-default)

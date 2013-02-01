@@ -1,5 +1,5 @@
 ;;; for redo+.el
-; (install-elisp-from-emacswiki "redo+.el")
+; (package-install 'redo+)
 (require 'redo+)
 (global-set-key (kbd "C-M-_") 'redo)
 (setq undo-no-redo t)

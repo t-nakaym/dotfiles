@@ -1,6 +1,6 @@
 ;;; for c-mode
 
-; (install-elisp "http://google-styleguide.googlecode.com/svn/trunk/google-c-style.el")
+; (package-install 'google-c-style)
 (require 'google-c-style)
 (add-hook 'c-mode-common-hook 'google-set-c-style)
 

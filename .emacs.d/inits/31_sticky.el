@@ -1,4 +1,4 @@
 ;;; for sticky.el
-; (install-elisp-from-emacswiki "sticky.el")
+; (package-install 'sticky)
 ;; (require 'sticky)
 ;; (use-sticky-key ";" sticky-alist:ja)

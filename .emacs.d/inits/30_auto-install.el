@@ -1,5 +1,5 @@
 ;;; for auto-install.el
-; (install-elisp-from-emacswiki "auto-install.el")
+; (package-install 'auto-install)
 (require 'auto-install)
 (auto-install-update-emacswiki-package-name t)
 (auto-install-compatibility-setup)

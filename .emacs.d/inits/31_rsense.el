@@ -1,6 +1,6 @@
 ;;; for rsense.el
 
-; download from http://cx4a.org/software/rsense/index.ja.html
+; (package-install 'rsense)
 (setq rsense-home (expand-file-name "~/local/rsense-0.3"))
 (add-to-list 'load-path (concat rsense-home "/etc"))
 (require 'rsense)

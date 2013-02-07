@@ -1,3 +1,4 @@
 OPTIONS=windowtype:tty
 OPTIONS=color
 OPTIONS=autopickup,pickup_types:$
+NAME=t_nakaym

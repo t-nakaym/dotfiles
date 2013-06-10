@@ -201,6 +201,10 @@ if [ "$TERM" = "screen" ]; then
     }
 fi
 
+# settings for rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
 # read environment dependent settings
 [ `uname -s` = "FreeBSD" -a -f "$HOME/.zshrc.freebsd" ] && source "$HOME/.zshrc.freebsd"
 [ `uname -s` = "Linux" -a -f "$HOME/.zshrc.linux" ] && source "$HOME/.zshrc.linux"

@@ -1,3 +1,3 @@
 ;;; for summarye.el
-; (install-elisp-from-emacswiki "summarye.el")
+; (package-install 'summarye)
 (require 'summarye)

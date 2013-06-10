@@ -3,6 +3,7 @@
 	email = tnakaym@gmail.com
 [core]
 	pager = lv -c
+	excludesfile = /home/t-nakaym/.global_gitignore
 [color]
 	status = auto
 	diff = auto

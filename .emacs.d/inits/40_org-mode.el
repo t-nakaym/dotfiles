@@ -7,6 +7,10 @@
 
 (setq org-agenda-files '("~/todo.org"))
 
+(add-hook 'org-mode-hook
+          (lambda ()
+            (setq indent-tabs-mode nil)))
+
 (setq org-plantuml-jar-path "~/local/jar/plantuml.jar")
 (add-hook 'org-mode-hook
 	  (lambda ()

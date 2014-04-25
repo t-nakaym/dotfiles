@@ -5,4 +5,10 @@
 (add-to-list 'auto-mode-alist '("\\.rb$" . enh-ruby-mode))
 (add-to-list 'auto-mode-alist '("Gemfile$" . enh-ruby-mode))
 (add-to-list 'interpreter-mode-alist '("ruby" . enh-ruby-mode))
+
 (setq enh-ruby-deep-indent-paren nil)
+
+(add-hook 'enh-ruby-mode-hook
+          '(lambda()
+             ; Use ruby-mode yasnippets in enh-ruby-mode
+             (yas-activate-extra-mode 'ruby-mode)))

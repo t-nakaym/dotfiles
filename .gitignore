@@ -9,3 +9,4 @@
 .emacs.d/elpa
 .emacs.d/inits/wget-log*
 .emacs.d/url
+.emacs.d/.cask

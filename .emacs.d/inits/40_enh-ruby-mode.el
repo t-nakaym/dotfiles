@@ -9,10 +9,16 @@
 (setq enh-ruby-deep-indent-paren nil)
 
 (add-hook 'enh-ruby-mode-hook
-          '(lambda()
+          (lambda ()
              ; Use ruby-mode yasnippets in enh-ruby-mode
-             (yas-activate-extra-mode 'ruby-mode)))
+             (yas-activate-extra-mode 'ruby-mode)
+             ; Enable robe-mode
+             (robe-mode)
+             (save-excursion
+               (window-configuration-to-register 'a)
+               (inf-ruby)
+               (robe-start)
+               (jump-to-register 'a))))
 
 ; for robe-mode
-(add-hook 'enh-ruby-mode-hook 'robe-mode)
 (add-hook 'robe-mode-hook 'ac-robe-setup)

@@ -12,3 +12,7 @@
           '(lambda()
              ; Use ruby-mode yasnippets in enh-ruby-mode
              (yas-activate-extra-mode 'ruby-mode)))
+
+; for robe-mode
+(add-hook 'enh-ruby-mode-hook 'robe-mode)
+(add-hook 'robe-mode-hook 'ac-robe-setup)

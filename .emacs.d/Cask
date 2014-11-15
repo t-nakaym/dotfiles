@@ -22,4 +22,4 @@
 (depends-on "google-c-style")
 (depends-on "enh-ruby-mode")
 (depends-on "js2-mode")
-
+(depends-on "haskell-mode")

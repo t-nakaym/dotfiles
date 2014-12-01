@@ -211,6 +211,10 @@ eval "$(rbenv init -)"
 # settings for Cask
 export PATH="$HOME/.cask/bin:$PATH"
 
+# settings for golang
+export GOPATH=$HOME/go/third-party:$HOME/go/my-project
+export PATH=$HOME/go/third-party/bin:$HOME/go/my-project/bin:$PATH
+
 # read environment dependent settings
 [ `uname -s` = "FreeBSD" -a -f "$HOME/.zshrc.freebsd" ] && source "$HOME/.zshrc.freebsd"
 [ `uname -s` = "Linux" -a -f "$HOME/.zshrc.linux" ] && source "$HOME/.zshrc.linux"

@@ -1,6 +1,7 @@
 ;;; 31_helm.el ---
 
 (require 'helm-config)
+(helm-mode 1)
 
 (defun my-helm ()
   (interactive)
@@ -16,3 +17,5 @@
 (global-set-key (kbd "M-;") 'my-helm)
 (global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key (kbd "M-y") 'helm-show-kill-ring)
+
+(define-key helm-map (kbd "C-h") 'helm-ff-delete-char-backward)

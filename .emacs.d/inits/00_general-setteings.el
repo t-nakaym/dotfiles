@@ -30,3 +30,6 @@
 
 ; suppress a warning: 'mapcar' called for effect
 (setq byte-compile-warnings '(free-vars unresolved callargs redefine obsolete noruntime cl-functions interactive-only make-local))
+
+; for emacsclient
+(server-start)

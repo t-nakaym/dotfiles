@@ -219,5 +219,6 @@ export PATH=$HOME/go/third-party/bin:$HOME/go/my-project/bin:$PATH
 [ `uname -s` = "FreeBSD" -a -f "$HOME/.zshrc.freebsd" ] && source "$HOME/.zshrc.freebsd"
 [ `uname -s` = "Linux" -a -f "$HOME/.zshrc.linux" ] && source "$HOME/.zshrc.linux"
 [ -f "$HOME/.zshrc.local" ] && source "$HOME/.zshrc.local"
+source "$HOME/.zshrc.peco"
 
 echo ".zshrc: finished read .zshrc"

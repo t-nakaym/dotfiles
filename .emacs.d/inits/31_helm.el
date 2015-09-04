@@ -19,3 +19,5 @@
 (global-set-key (kbd "M-y") 'helm-show-kill-ring)
 
 (define-key helm-map (kbd "C-h") 'helm-ff-delete-char-backward)
+(define-key helm-read-file-map (kbd "TAB") 'helm-execute-persistent-action)
+(define-key helm-find-files-map (kbd "TAB") 'helm-execute-persistent-action)

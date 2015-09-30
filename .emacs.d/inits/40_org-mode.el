@@ -13,7 +13,7 @@
 
 (setq org-plantuml-jar-path "~/local/jar/plantuml.jar")
 (add-hook 'org-mode-hook
-	  (lambda ()
-	    (org-babel-do-load-languages
-	     'org-babel-load-languages
-	     (add-to-list 'org-babel-load-languages '(plantuml . t)))))
+          (lambda ()
+            (org-babel-do-load-languages
+             'org-babel-load-languages
+             (add-to-list 'org-babel-load-languages '(plantuml . t)))))

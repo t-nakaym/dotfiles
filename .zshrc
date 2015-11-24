@@ -206,7 +206,12 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 # settings for nvm
-[ -s "$HOME/.nvm/nvm.sh" ] && . "$HOME/.nvm/nvm.sh"
+if [ `uname` = "Darwin" ]; then
+    export NVM_DIR="$HOME/.nvm"
+    source $(brew --prefix nvm)/nvm.sh
+else
+    [ -s "$HOME/.nvm/nvm.sh" ] && source "$HOME/.nvm/nvm.sh"
+fi
 
 # settings for Cask
 export PATH="$HOME/.cask/bin:$PATH"
@@ -218,6 +223,7 @@ export PATH=$HOME/go/third-party/bin:$HOME/go/my-project/bin:$PATH
 # read environment dependent settings
 [ `uname -s` = "FreeBSD" -a -f "$HOME/.zshrc.freebsd" ] && source "$HOME/.zshrc.freebsd"
 [ `uname -s` = "Linux" -a -f "$HOME/.zshrc.linux" ] && source "$HOME/.zshrc.linux"
+[ `uname -s` = "Darwin" -a -f "$HOME/.zshrc.macos" ] && source "$HOME/.zshrc.macos"
 [ -f "$HOME/.zshrc.local" ] && source "$HOME/.zshrc.local"
 source "$HOME/.zshrc.peco"
 

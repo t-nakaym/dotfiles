@@ -14,6 +14,7 @@
 (global-set-key (kbd "M-g") 'goto-line)
 
 ; mode-line settings
+(setq display-time-24hr-format t)
 (display-time)
 (line-number-mode 1)
 (column-number-mode 1)

@@ -79,6 +79,9 @@ if [ -f "$HOME/.ssh/nopass-dsa" ]; then
 fi
 where jman > /dev/null 2>&1; [ $? -eq 0 ] && alias man=jman
 where pgrep > /dev/null 2>&1; [ $? -eq 0 ] && alias pgrep='pgrep -l'
+if [ "$TERM" = "screen.xterm-256color" ]; then
+    alias emacs='TERM="xterm-256color" emacs'
+fi
 
 # shell functions
 setenv() { typeset -x "${1}${1:+=}${(@)argv[2,$#]}" }  # csh compatibility

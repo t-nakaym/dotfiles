@@ -176,7 +176,7 @@ zstyle ':completion:*:*:(^rm):*:*files' ignored-patterns '*?.o' '*?.c~' \
 zstyle ':completion:*:functions' ignored-patterns '_*'
 
 # dynamic modification of screen title
-if [ "$TERM" = "screen" ]; then
+if expr "$TERM" : "screen.*" > /dev/null; then
     if [ `uname -s` = "Linux" ]; then
         ECHO_OPTION="-ne"
         HOSTNAME_OPTION=""

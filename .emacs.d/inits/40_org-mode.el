@@ -5,7 +5,12 @@
 (define-key global-map (kbd "C-c a") 'org-agenda)
 (define-key global-map (kbd "C-c b") 'org-iswitchb)
 
-(setq org-agenda-files '("~/todo.org"))
+(setq org-agenda-files '("~/org-files/todo.org" "~/org-files/schedule.org"))
+(setq org-capture-templates
+      '(("t" "Task" entry (file "~/org-files/todo.org")
+             "* TODO %?\n")
+        ("s" "Schedule" entry (file "~/org-files/schedule.org")
+             "* TODO %?\n")))
 
 (add-hook 'org-mode-hook
           (lambda ()

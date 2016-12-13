@@ -3,6 +3,7 @@
 (add-hook 'c-mode-hook 'helm-gtags-mode)
 (add-hook 'c++-mode-hook 'helm-gtags-mode)
 (add-hook 'java-mode-hook 'helm-gtags-mode)
+(add-hook 'enh-ruby-mode-hook 'helm-gtags-mode)
 
 (eval-after-load "helm-gtags"
   '(progn

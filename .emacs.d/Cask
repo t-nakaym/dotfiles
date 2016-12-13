@@ -27,3 +27,4 @@
 (depends-on "go-autocomplete")
 (depends-on "go-eldoc")
 (depends-on "go-errcheck")
+(depends-on "markdown-mode")

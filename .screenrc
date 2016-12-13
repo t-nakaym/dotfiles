@@ -140,4 +140,11 @@ bind ^L focus right
 #
 
 screen w3m -B
+split
+focus
+resize -12
+focus
+screen -T xterm-256color emacs
+focus
+screen pry
 screen
